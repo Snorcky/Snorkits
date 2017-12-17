@@ -1,0 +1,12 @@
+name: Snorkits
+version: 1.0
+author: Snorcky
+main: fr.snorcky.snorkits.Main
+commands:
+  kit:
+    description: Obtenir un kit
+    permission: kit.use
+  kits:
+   description:
+     description: Affiche la liste des kits
+     permission: kits.use
