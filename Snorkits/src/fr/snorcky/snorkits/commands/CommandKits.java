@@ -26,6 +26,14 @@ public class CommandKits implements CommandExecutor {
 						player.sendMessage("§c/kit <nomdukit>");
 						player.sendMessage("§c/kits : Afficher la liste des kits");
 					}
+					if(args.length == 1) {
+						player.sendMessage("caca");
+						for(String kit : main.getConfig().getConfigurationSection("kits").getKeys(false)) {
+							player.sendMessage(kit);
+							System.out.println((main.getConfig().getConfigurationSection("kits").getIntegerList(kit + ".items")));
+							player.getInventory().addItem();
+						}
+					}
 					
 				}
 				if(cmd.getName().equalsIgnoreCase("kits")) {
